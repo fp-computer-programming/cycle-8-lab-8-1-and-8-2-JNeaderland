@@ -9,17 +9,17 @@ Add a statement that prompts the user to input an integer
 Call the function from step 2 and store its output as a variable
 Add a statement to print the variable to see the final sum
 """
-def numadd (maxnumi):
-    maxnum = int(maxnumi)
-    for x in range(maxnum):
-        print (x + 1)
-    summation (maxnum)
-def summation(maxnum):
-    max2 = maxnum ** 2
-    top = max2 + maxnum
-    whole = top / 2
-    print (whole)
-numadd (input("What is your number? "))
+def add_nums():
+    num = input("What is your number? ")
+    numi = int(num) - 1
+    numr = range(numi)
+    i = 1
+    a = 0
+    for i in numr:
+        i = i+1
+        a = a + a + 1
+    print (a)
+add_nums()
 
 """
 Create a Python file named lab_8-2
@@ -31,6 +31,10 @@ The body should be something like this: "Hi name, You're invited to my party on 
 The function should use a for loop and print each invitation after it is generated. There should be at least 3 names in the list.
 
 """
-names = ["name1", "name2", "name3"]
+
+names = ["John", "Jacob", "Jinglheimer", "Schmit"]
+lenn = len(names)
 def email ():
-    for x in names:
+    for i in range(lenn):
+        print ("Hi ", names[i], ", You're invited to my party on friday!")     
+email ()
