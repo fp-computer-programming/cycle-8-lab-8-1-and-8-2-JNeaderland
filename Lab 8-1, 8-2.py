@@ -14,7 +14,6 @@ def add_nums():
     numi = int(num) - 1
     numr = range(numi)
     i = 1
-    a = 0
     for i in numr:
         i = i + 1
         a = i
