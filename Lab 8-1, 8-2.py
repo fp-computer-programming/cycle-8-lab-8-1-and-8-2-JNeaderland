@@ -16,8 +16,9 @@ def add_nums():
     i = 1
     a = 0
     for i in numr:
-        i = i+1
-        a = a + a + 1
+        i = i + 1
+        a = i
+        a = (a * (a + 1))/2
     print (a)
 add_nums()
 
